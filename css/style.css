@@ -1,0 +1,279 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #FDFDFD;
+  /* background-color: #202123; */
+  background-image: url("../images/back4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+}
+.wrapper{
+  position: relative;
+  height: 100vh;
+}
+.containerR{
+  display: flex;
+}
+.containerC{
+  display: flex;
+  flex-direction: column;
+}
+.form_signup{
+  border: 0px solid #21c861a9;
+  width: 50%;
+  height: fit-content;
+  border-radius: 10px;
+  margin: auto;
+  gap: 10px;
+  background-color: rgba(25, 47, 48, 0.1);
+  box-shadow: 0px 0px 10px rgba(25, 48, 47, 0.5);
+  backdrop-filter: blur(10px);
+}
+.form_signupIn{
+  margin-top: 20%;
+  padding: 0 20px 20px 20px;
+  gap: 20px;
+}
+.formTop{
+  background-color:#21c861 ;
+  padding: 20px;
+  width: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.form_signup label{
+  position: relative;
+  width: 100%;
+  background-color: #21c861;
+}
+.form_signup img{
+  width: 20px;
+}
+.form_signup span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 5px;
+  border-radius: 50%;
+}
+.form_signup input[type="text"], .form_signup input[type="password"]{
+  background-color:#202123 ;
+  border: 0px solid #9F9FA1;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+  color:#9F9FA1 ;
+  border-bottom: 1px solid #21c861a9;
+  width: 100%;
+  padding-left: 40px;
+}
+
+.formTitle{
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: #9F9FA1;
+}
+a:hover{
+  color: #21c861a9;
+}
+.btn{
+  min-width: 150px;
+  max-width:50% ;
+  padding: 14px;
+  align-self: center;
+  text-transform: uppercase;
+  color: #FDFDFD;
+  font-size: large;
+  border: 0px solid black;
+  background-color: #21c861;
+  border-radius: 5px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn:active{
+  color: #202123;
+}
+.sidebar{
+  width: 20%;
+  height: 100vh;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 20px;
+  border-right: 1px solid #3b3b3b;
+  background-color: #262729;
+}
+.sidebarTop{
+  align-items: center;
+}
+.expandButton{
+  width: fit-content;
+  margin-left: auto;
+  color: #9F9FA1;
+}
+.userIcon{
+  padding: 5px;
+  color: #202123;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #FDFDFD;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.userName{
+  font-weight: bold;
+}
+.lineH{
+  width: 100%;
+  margin-top: 20px;
+  height: 2px;
+  background-color: #3b3b3b;
+}
+.sidebar a{
+  padding: 5px 5px 5px 0;
+  color: #FDFDFD;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.1s;
+}
+.sidebar a:hover{
+  background-color: #363739;
+  transform: scale(1.05);
+}
+.sidebar a p{
+  color: #9F9FA1;
+  margin-left: auto;
+}
+.ico{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.mainContent{
+  height: 100vh;
+  padding: 60px;
+  width: 80%;
+  gap: 20px;
+}
+.icoListMain{
+  width: 50px;
+  height: 50px;
+}
+/* ---------------------------- */
+/* HIDE THE DEFAULT CHECKBOX */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the label to act as the custom checkbox */
+input[type="checkbox"] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #333; /* Dark background when unchecked */
+  border-radius: 4px; /* Optional: rounded corners */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Create the green checkmark */
+input[type="checkbox"]:checked + label {
+  background-color: #21c861; /* Green background when checked */
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #FDFDFD;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* ------------------------------------- */
+.taskItem{
+  border: 1px solid #3b3b3b;
+  border-radius: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+}
+.taskDueTime{
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-style: center;
+  font-size: 10px;
+}
+.dueToday{
+  background-color: #1D3229;
+  color:#21c861 ;
+}
+.dueNormal{
+  background-color: #28292B;
+  color:#9F9FA1 ;
+}
+.task{
+  /* background-color: green; */
+}
+.taskList{
+  gap: 10px;
+}
+.taskItem span{
+  margin-left: auto;
+}
+.taskItem a img{
+  width: 24px;
+  height: 24px;
+}
+/* RESPONSIVE SIDE BAR */
+.sBarCollapsed{
+  /* width: 20px; */
+}
+.sBarHide{
+  position: absolute;
+  left: -1px;
+}
+/* TABS n PHONE LANDSCAPE */
+@media screen and (max-width:860px) {
+  .form_signup{
+    width: 70%;
+  }
+  .sidebar{
+    width: 25%;
+  }
+  .mainContent{
+    width: 75%;
+  }
+}
+
+/* PHONE PORTRIATE */
+@media screen and (max-width: 480px){
+  .sidebar{
+    width: 25%;
+    display: none;
+  }
+  .mainContent{
+    width: 75%;
+    width: 100%;
+    padding: 40px 10px;
+  }
+}

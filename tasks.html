@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta title="Taska">
+    <meta name="description" content="Your ultimate task / todo app">
+    <meta name="keywords" content="task, tasks, todo, to do, todo app, task manager">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taska</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <div class="wrapper containerR" id="wrapper">
+    <div class="sidebar containerC sBarCollapsed" id="sidebar">
+        <div class="containerR sidebarTop">
+            <p class="userIcon containerR">E</p>
+            <p class="userName">Edon</p>
+            <div class="expandButton"><<</div>
+        </div>
+        <a href="#" class="containerR"><img src="images/task-list-svgrepo-com.svg" class="ico icoSide" alt="Today">Today<p>7</p></a>
+        <a href="#" class="containerR"><img src="images/completed-order-svgrepo-com-upcoming.svg" class="ico icoSide" alt="Upcoming">Upcoming<p>7</p></a>
+        <a href="#" class="containerR"><img src="images/completed-order-svgrepo-com.svg" class="ico icoSide" alt="Completed">Completed<p>7</p></a>
+        <div class="lineH"></div>
+        <p>Lists</p>
+        <a href="#" class="containerR"><img src="images/WhatsApp_emoticons_pack/emoji_pcnexus/e1525.png" class="ico icoList" alt="listPersonal">Personal<p>7</p></a>
+        <a href="#" class="containerR"><img src="images/WhatsApp_emoticons_pack/sports_pcnexus/e0478.png" class="ico icoList" alt="listWork">Work<p>7</p></a>
+        <a href="#" class="containerR"><img src="images/new-indicator-svgrepo-com.svg" class="ico icoNewList" alt="icoNew">New List</a>
+    </div>
+    <div class="mainContent containerC" id="mainContent">
+        <img src="images/WhatsApp_emoticons_pack/emoji_pcnexus/e1525.png" alt="icoList" class="icoListMain">
+        <h1 class="listTitle">Personal</h1>
+        <a href="#" class="containerR"><img src="images/new-indicator-svgrepo-com.svg" class="ico icoNewTask" alt="icoNew">New Task</a>
+        <div class="lineH"></div>
+        <div class="taskList containerC">
+            <div class="task containerR">
+                <div class="containerR taskItem" id="taskItem">
+                  <input type="checkbox" id="taskID1" name="taskItem">
+                  <label for="taskID1"></label>
+                  <p class="taskTitle">Task number 1</p>
+                  <p class="taskDueTime dueToday">Today</p>
+                  <span>
+                    <a href="#" class="editTaskImg">
+                    <img src="../images/icon1.png" alt="EditTask">
+                  </a>
+                  <a href="#" class="deleteTaskImg">
+                    <img src="../images/icon1.png" alt="DelTask">
+                  </a>
+                  </span>
+                </div>
+            </div>
+            
+            <div class="task containerR">
+                <div class="containerR taskItem" id="taskItem">
+                  <input type="checkbox" id="taskID2" name="taskItem">
+                  <label for="taskID2"></label>
+                  <p class="taskTitle">Task number 2</p>
+                  <p class="taskDueTime dueNormal">Tomorrow</p>
+                  <span>
+                    <a href="#" class="editTaskImg">
+                    <img src="../images/icon1.png" alt="EditTask">
+                  </a>
+                  <a href="#" class="deleteTaskImg">
+                    <img src="../images/icon1.png" alt="DelTask">
+                  </a>
+                  </span>
+                </div>
+            </div>
+            
+            <div class="task containerR">
+                <div class="containerR taskItem" id="taskItem">
+                  <input type="checkbox" id="taskID3" name="taskItem">
+                  <label for="taskID3"></label>
+                  <p class="taskTitle">Task number 3</p>
+                  <p class="taskDueTime dueNormal">16 Sep</p>
+                  <span>
+                    <a href="#" class="editTaskImg">
+                    <img src="../images/icon1.png" alt="EditTask">
+                  </a>
+                  <a href="#" class="deleteTaskImg">
+                    <img src="../images/icon1.png" alt="DelTask">
+                  </a>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="script1.js"></script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta title="Taska">
+    <meta name="description" content="Your ultimate task / todo app">
+    <meta name="keywords" content="task, tasks, todo, to do, todo app, task manager">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taska</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <div class="wrapper containerR" id="wrapper">
+    <form id="form_signup" class="form_signup containerC" method="POST">
+      <h3 class="formTop formTitle">LOG IN</h3>
+      <div class="containerC form_signupIn" >
+        <label for="txtUsername">
+          <input type="text" name="txtUsername" id="txtUsername" placeholder="Username" required>
+          <span><img src="images/user-svgrepo-com.svg" alt="Userimg"></span>
+        </label>
+        
+        <label for="txtPassword">
+          <input type="password" name="txtPassword" id="txtPassword" placeholder="Password" required>
+          <span><img src="images/password-lock-solid-svgrepo-com.svg" alt="Userimg"></span>
+        </label>
+        <a style="font-style:italic; font-size:12px;" href="#">Forgotten Password</a>
+        <a href="#" style="margin-top: 20px; text-align: right;">Sign Up</a>
+        <input class="btn btnSubmit" type="submit" id="submit" value="Log In">
+      </div>
+    </form>
+  </div>
+</html>
